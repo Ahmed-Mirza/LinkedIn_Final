@@ -1,0 +1,13 @@
+<h1>
+	History Page
+</h1>
+<hr />
+<%@searches.each do |search|%>
+
+	<h2>
+		<%=  search.content%>
+	</h2>
+	<p>
+		<%= link_to "Delete", search,:method => :delete %>
+	</p>
+<%end%>

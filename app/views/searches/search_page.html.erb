@@ -1,0 +1,13 @@
+<h1>
+	Search Page
+</h1>
+<hr />
+<%= form_for @search do |f|%>
+	<p>
+		<%= f.label "Search"%><br />
+		<%= f.text_field :content%>
+		<%= f.submit "SEARCH!!!"%>
+	</p>
+	<hr />
+	<%= link_to " Check History ", history_path %>
+<%end%>
